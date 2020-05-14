@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper indicator-dots autoplay interval="3000" circular>
+    <swiper-item wx:for="{{banners}}" wx:key="index">
+      <image src="{{item.picUrl}}" class="banner"></image>
+    </swiper-item>
+  </swiper>
+  <view class="search">
+    <input class="flex1" 
+      model:value="{{searchGood}}"
+      placeholder="输入搜索关键词"
+      bindconfirm="search"
+      confirm-type="search"></input>
+    <image class="icon" src="/img/icon/search.svg"></image>
+  </view>
+</view>
+
+<view class="flex category">
+  <view class="flex column wrapper-category" wx:for="{{categoryList}}" wx:key="index">
+    <image class="category-icon" src="{{item.icon}}"></image>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+
+<CategoryTitle title="爆款推荐"></CategoryTitle>
+
+<view class="good-list flex flex-wrap">
+  <view class="wrap-good" wx:for="{{goodList}}" wx:key="index">
+    <GoodCell good="{{item}}"></GoodCell>
+  </view>
+</view>

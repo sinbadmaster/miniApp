@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cell": "/components/listNav/listNav"
+  },
+  "navigationBarTitleText": "会员中心",
+  "enablePullDownRefresh": false
+}

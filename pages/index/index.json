@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "CategoryTitle": "/components/categoryTitle/categoryTitle",
+    "GoodCell": "/components/goodCell/goodCell"
+  },
+  "navigationBarTitleText": "会场中心"
+}

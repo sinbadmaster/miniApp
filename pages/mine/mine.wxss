@@ -1,0 +1,44 @@
+/* pages/mine/mine.wxss */
+.wrap-userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrap-flex-row {
+  justify-content: space-around;
+}
+
+.memberinfo {
+  flex: 1;
+  text-align: center;
+  border-left: 1px solid #d8d8d8;
+}
+
+.avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.none-border {
+  border: none;
+}
+
+.bottom-border {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.bottom-border-10 {
+  border-bottom: 6px solid #e2e2e2be;
+}
+
+.padding-t-b {
+  padding: 10px 0;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}

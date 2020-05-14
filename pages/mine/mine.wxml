@@ -1,0 +1,48 @@
+<view class="content">
+  <view class="wrap-userinfo">
+    <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+    <text wx:if="{{login}}">{{userInfo.nickName}}</text>
+    <button class="mini-btn" 
+      wx:else
+      plain="true"
+      lang="zh_CN"
+      open-type="getUserInfo"
+      bindgetuserinfo="userInfo"
+      size="mini">立即登录</button>
+  </view>
+
+  <view class="wrap-flex-row flex padding-t-b">
+    <view class="{{['flex', 'column', 'memberinfo', index === 0 ? 'none-border' : '']}}"
+      wx:for-index="index"
+      wx:for="{{memberInfos}}"
+      wx:key="index"
+      wx:for-item="info">
+      <text>{{info.count}}</text>
+      <text>{{info.text}}</text>
+    </view>
+  </view>
+
+  <view class="bottom-border padding-t-b">
+    <cell item="{{mineOrder}}" bind:tapCell="tapCell"></cell>
+  </view>
+  
+  <view class="flex wrap-flex-row bottom-border padding-t-b">
+    <navigator class="flex column align-center " 
+      url="{{operate.url}}" 
+      wx:for="{{orderOperates}}" 
+      wx:for-index="index" 
+      wx:for-item="operate" 
+      wx:key="index">
+      <image src="{{operate.icon}}" class="icon"></image>
+      <text>{{operate.text}}</text>
+    </navigator>
+  </view>
+
+  <view class="{{['padding-t-b', nav.hasStrongBorder ? 'bottom-border-10' : 'bottom-border']}}"
+    wx:for="{{navList}}" 
+    wx:for-index="i" 
+    wx:for-item="nav" 
+    wx:key="i">
+    <cell item="{{nav}}" bind:tapCell="tapCell"></cell>
+  </view>
+</view>

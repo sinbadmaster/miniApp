@@ -1,0 +1,7 @@
+<view class="category-title">
+  <view class="line"></view>
+  <text class="title">
+    {{title}}
+  </text>
+  <view class="line"></view>
+</view>

@@ -1,0 +1,6 @@
+
+<view class="cell" bindtap="tapHandler">
+  <text>{{item.text}}</text>
+  <slot></slot>
+  <image class="right-arrow" src="/img/icon/next.svg"></image>
+</view>

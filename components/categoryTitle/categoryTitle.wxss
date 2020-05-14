@@ -1,0 +1,17 @@
+.category-title {
+  align-items: center;
+  flex-wrap: nowrap;
+  display: flex;
+  margin: 10px 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #e2e2e2be;
+}
+
+.title {
+  padding: 0 10px;
+  line-height: 0;
+}

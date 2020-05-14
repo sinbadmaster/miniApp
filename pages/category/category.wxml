@@ -1,0 +1,43 @@
+<view class="container flex column">
+  <view class="wrap-search flex">
+    <input type="text"
+      class="flex1 input"
+      placeholder="输入搜索关键词"
+      bindconfirm="search"
+      confirm-type="search"></input>
+    <image class="icon" src="/img/icon/search.svg"></image>
+  </view>
+  <view class="flex flex1">
+    <scroll-view class="scroll wrap-text" scroll-y="{{true}}">
+      <view class="category-text {{selectedCategory.id === item.id ? 'active' : ''}}"
+        wx:for="{{categoryList}}"
+        wx:key="index"
+        bind:tap="selectCategory"
+        data-category="{{item}}"
+        >{{item.name}}</view>
+    </scroll-view>
+    <scroll-view class="wrap-goods scroll" scroll-top="{{scrollTop}}" scroll-x="{{true}}" scroll-y="{{true}}">
+      <view class="none-good" wx:if="{{!goodList.length}}">
+        <NoneGood title="暂无商品"></NoneGood>
+      </view>
+      
+      <block wx:else>
+        <view class="flex good-box" wx:for="{{goodList}}" wx:key="index">
+          <image class="good-pic" src="{{item.pic}}" lazy-load="{{true}}" mode="aspectFill"></image>
+          <view class="wrap-info flex1">
+            <view class="title">{{item.name}}</view>
+            <view class="price-box flex">
+              <text>￥{{item.minPrice}}</text>
+              <image src="/img/icon/car.svg" class="icon" bind:tap="pushGoodCar" data-good="{{item}}"/>
+            </view>
+            <view class="amount">
+              <view class="sells">
+                已售{{item.numberSells}}件
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

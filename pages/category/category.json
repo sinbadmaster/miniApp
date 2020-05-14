@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "NoneGood": "/components/categoryTitle/categoryTitle"
+  },
+  "navigationBarTitleText": "商品分类"
+}

@@ -1,0 +1,8 @@
+<view class="good-cell">
+  <image class="good-pic" src="{{good.pic}}" lazy-load="{{true}}" mode="aspectFill"></image>
+  <view class="intro padding-l-r-10">{{good.name}}</view>
+  <view class="wrap-price padding-l-r-10">
+    <text class="now">{{good.minPrice}}</text>
+    <text class="pre">{{good.originalPrice}}</text>
+  </view>
+</view>

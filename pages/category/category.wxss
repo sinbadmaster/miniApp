@@ -1,0 +1,81 @@
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.wrap-search {
+  margin-left: 25rpx;
+  width: 700rpx;
+  border: 1px solid #e2e2e2be;
+  border-radius: 30px;
+  padding: 6px 10px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+}
+
+.category-text {
+  padding: 15px 0px 15px 15px;
+  box-sizing: border-box;
+}
+
+.scroll {
+  height: 100%;
+}
+
+.wrap-text {
+  width: 180rpx;
+}
+
+.wrap-info {
+  width: 370rpx;
+  box-sizing: border-box;
+  padding: 6px 10px;
+}
+
+.wrap-goods {
+  width: 570rpx;
+}
+
+.active {
+  color: rgba(245, 35, 35, 0.692);
+  border-left: 2px solid rgba(245, 35, 35, 0.692);
+}
+
+.good-pic {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #e2e2e2be;
+}
+
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.none-good {
+  padding: 0 20px;
+}
+
+.price-box {
+  justify-content: space-between;
+  color: rgba(245, 35, 35, 0.692);
+  font-size: 28rpx;
+}
+
+.sells {
+  font-size: 24rpx;
+  color: rgba(245, 35, 35, 0.692);
+  padding: 6rpx 8rpx;
+  border: 1px solid rgba(245, 35, 35, 0.692);
+  display: inline-block;
+}
+
+.good-box {
+  box-sizing: border-box;
+  padding: 10px 8px;
+  border-bottom: 1px solid #e2e2e2be;
+}

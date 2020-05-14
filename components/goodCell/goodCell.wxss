@@ -1,0 +1,30 @@
+.good-pic {
+  width: 350rpx;
+  height: 350rpx;
+  background-color: #e2e2e2be;
+}
+
+.intro {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.wrap-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pre {
+  text-decoration: line-through;
+}
+
+.good-cell {
+  width: 350rpx;
+  background-color: #fff;
+}
+
+.padding-l-r-10 {
+  padding: 0 10px;
+}
